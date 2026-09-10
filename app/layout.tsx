@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 import NavContainer from "@/components/Navbar/NavContainer";
 
@@ -16,6 +17,13 @@ const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
+
+const albertSans = Albert_Sans({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-albert-sans",
+});
+
 export const metadata: Metadata = {
   title: "Landing Page",
   description: "Underdevelopment",
@@ -23,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${font.className} h-full antialiased`}>
+    <html lang="en" className={`${font.className} ${albertSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <NavContainer />
         {children}
