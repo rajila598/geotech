@@ -10,12 +10,15 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary: #2f3a4b;
+  --color-secondary: #ededed;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #2f3a4b;
   }
 }
 
@@ -23,4 +26,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .container{
+    @apply mx-auto w-full px-20 py-3 sm:max-w-[600px] md:max-w-[740px] lg:max-w-[990px] xl:max-w-[1216px];
+  }
+
+  .button{
+    @apply px-6 py-1.5 text-white font-medium rounded bg-primary shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 m-3
+  }
 }
