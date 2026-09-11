@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${font.className} ${albertSans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="flex flex-col">
         <NavContainer />
         {children}
       </body>

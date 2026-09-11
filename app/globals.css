@@ -40,6 +40,7 @@ body {
   }
 
   .button {
-    @apply px-6 py-1.5 text-white font-medium rounded bg-primary shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 m-3;
+    @apply inline-flex items-center gap-2.5 bg-brand-accent text-white rounded-md px-7 py-4 text-[15px] font-bold shadow-brand-bg hover:bg-brand-accent-hover transition-colors;
   }
 }
+/* inline-flex items-center gap-2.5 text-[15px] font-bold shadow-brand-cta hover:bg-brand-accent-hover transition-colors */

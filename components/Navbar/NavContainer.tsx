@@ -10,7 +10,7 @@ const NavContainer = () => {
   return (
     <div>
       <Navbar openNavbar={openNav}/>
-      <MobileNav showNav={isMenuOpen} closeNavbar={closeNav}/>
+      <MobileNav isMenuOpen={isMenuOpen} closeNavbar={closeNav}/>
     </div>
   );
 };

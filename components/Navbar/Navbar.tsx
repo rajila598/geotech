@@ -9,10 +9,10 @@ type Props = {
     openNavbar: () => void;
 }
 
-const Navbar = () => {
+const Navbar = ({openNavbar}:Props) => {
   return (
     <div className="container h-[12vh] relative z-10 lg:mt-8">
-      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex items-center h-full w-[90%] xl:w-[80%] mx-auto justify-between lg:justify-center">
         {/* logo */}
         <Logo />
         {/* Links */}
@@ -31,9 +31,11 @@ const Navbar = () => {
         <button className="button">Get a Quote</button>
         </div>
       {/* Menu */}
-      <div className="lg:hidden">
+      <div onClick={openNavbar} className="lg:hidden">
         <TiThMenu className="w-6 h-6 cursor-pointer"/>
-        <MobileNav />
+        <MobileNav isMenuOpen={false} closeNavbar={function (): void {
+            throw new Error("Function not implemented.");
+          } } />
       </div>
       </div>
     </div>
