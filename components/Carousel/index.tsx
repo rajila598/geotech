@@ -7,7 +7,6 @@ import {
   useRef,
   useState,
 } from "react";
-import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 type CarouselProps = {
@@ -18,6 +17,8 @@ type CarouselProps = {
   loop?: boolean;
   showDots?: boolean;
   showArrows?: boolean;
+  autoPlay?: boolean;
+  autoPlayInterval?: number;
   className?: string;
 };
 
@@ -29,6 +30,8 @@ export function Carousel({
   loop = true,
   showDots = true,
   showArrows = true,
+  autoPlay = false,
+  autoPlayInterval = 5000,
   className = "",
 }: CarouselProps) {
   const slides = Children.toArray(children);
@@ -38,6 +41,7 @@ export function Carousel({
   const index = controlledIndex ?? internalIndex;
 
   const touchStartX = useRef<number | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
 
   const setIndex = useCallback(
     (nextIndex: number) => {
@@ -92,6 +96,18 @@ export function Carousel({
     }
   };
 
+  // Auto play
+  useEffect(() => {
+    if (!autoPlay || count <= 1 || isPaused) return;
+
+    const interval = setInterval(() => {
+      next();
+    }, autoPlayInterval);
+
+    return () => clearInterval(interval);
+  }, [autoPlay, autoPlayInterval, count, isPaused, next]);
+
+  // Keep index valid if slide count changes
   useEffect(() => {
     if (index >= count && count > 0) {
       setIndex(count - 1);
@@ -108,7 +124,12 @@ export function Carousel({
       aria-label="Carousel"
       tabIndex={0}
       onKeyDown={handleKeyDown}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+      onFocus={() => setIsPaused(true)}
+      onBlur={() => setIsPaused(false)}
       onTouchStart={(event) => {
+        setIsPaused(true);
         touchStartX.current = event.touches[0].clientX;
       }}
       onTouchEnd={(event) => {
@@ -122,6 +143,9 @@ export function Carousel({
         }
 
         touchStartX.current = null;
+
+        // Resume autoplay after interaction
+        setIsPaused(false);
       }}
     >
       {/* Viewport */}
@@ -159,7 +183,7 @@ export function Carousel({
             aria-label="Previous slide"
             className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/35 text-xl transition hover:bg-black/80"
           >
-            <IoIosArrowBack color="white"/>
+            <IoIosArrowBack color="white" />
           </button>
 
           <button
@@ -169,7 +193,7 @@ export function Carousel({
             aria-label="Next slide"
             className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/35 text-xl transition hover:bg-black/80"
           >
-            <IoIosArrowForward color="white"/>
+            <IoIosArrowForward color="white" />
           </button>
         </>
       )}
