@@ -50,7 +50,7 @@ body {
   }
 
   .button {
-    @apply inline-flex items-center gap-2.5 bg-brand-accent text-white rounded-md px-7 py-4 text-[15px] font-bold shadow-brand-bg hover:bg-brand-accent-hover transition-colors;
+    @apply inline-flex items-center cursor-pointer gap-2.5 bg-brand-accent text-white rounded-md px-7 py-4 text-[15px] font-bold shadow-brand-bg hover:bg-brand-accent-hover transition-colors;
   }
 }
 /* inline-flex items-center gap-2.5 text-[15px] font-bold shadow-brand-cta hover:bg-brand-accent-hover transition-colors */

@@ -36,7 +36,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ slide }) => {
 
       <a
         href={slide.primaryCtaLink}
-        className="inline-flex items-center gap-2.5 bg-brand-accent text-white rounded-md px-6 sm:px-7 py-3.5 sm:py-4 text-[15px] font-bold shadow-brand-cta hover:bg-brand-accent-hover transition-colors"
+        className="button"
       >
         {slide.primaryCtaText}
         <span className="text-base">&#8594;</span>

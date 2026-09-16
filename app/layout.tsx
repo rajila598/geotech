@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 import NavContainer from "@/components/Navbar/NavContainer";
+import Footer from "@/components/Footer/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex flex-col">
         <NavContainer />
         {children}
-        <div className="h-50 bg-black text-brand-accent text-center text-2xl">Footer</div>
+        <Footer />
       </body>
     </html>
   );

@@ -3,8 +3,9 @@ import { Carousel } from "@/components/Carousel";
 import CarouselCard, {
   CarouselSlide,
 } from "@/components/Carousel/CarouselCard";
-import { CountUp } from "@/components/style-utilities/CountUp";
-import { RevealSection } from "@/components/style-utilities/RevealSection";
+import Counter from "@/components/Counter/Counter";
+import About from "@/components/Home/About/About";
+
 
 export const carouselSlides: CarouselSlide[] = [
   {
@@ -51,67 +52,22 @@ export const carouselSlides: CarouselSlide[] = [
 const Home = () => {
   return (
     <>
-      <Carousel showDots={false} showArrows={false} autoPlay autoPlayInterval={5000} >
+      <Carousel
+        showDots={false}
+        showArrows={false}
+        autoPlay
+        autoPlayInterval={5000}
+      >
         {carouselSlides.map((slide) => (
           <CarouselCard key={slide.id} slide={slide} />
         ))}
       </Carousel>
       <div className="container">
         {/* why choose us */}
-        <div className="flex flex-col md:flex-row items-center px-8 py-16 mx-auto max-w-[1200px] gap-4">
-          <div className="flex flex-col gap-4 items-start justify-start">
-            <div className="font-bold text-3xl lg:text-4xl">Why Choose Us?</div>
-            <div className="text-gray-500">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-              iste voluptatem tempore natus, cupiditate nam voluptatum fugiat
-              maxime ipsum sed error vitae doloremque inventore dolorem rerum
-              enim dolore. Sed, nesciunt!
-            </div>
-            <button className="button">Get Started</button>
-          </div>
-          <div className="w-full min-w-[300px] rounded-3xl">
-            <img
-              src="https://picsum.photos/200"
-              alt=""
-              width={"500px"}
-              height={"500px"}
-            />
-          </div>
-        </div>
-
-
-
-        <div className="relative overflow-hidden bg-white text-black font-albert">
-          <RevealSection className="px-6 py-32 md:px-16 flex justify-between">
-              <div>
-                <div className="text-3xl md:text-4xl text-brand-accent">
-                  <CountUp end={250} />
-                </div>
-                <p className="mt-3 text-sm uppercase">Projects</p>
-              </div>
-
-              <div>
-                <div className="text-3xl md:text-4xl text-brand-accent">
-                  <CountUp end={48} />
-                </div>
-                <p className="mt-3 text-sm uppercase">Clients</p>
-              </div>
-
-              <div>
-                <div className="text-3xl md:text-4xl text-brand-accent">
-                  <CountUp end={12} />
-                </div>
-                <p className="mt-3 text-sm uppercase">Awards</p>
-              </div>
-
-              <div>
-                <div className="text-3xl md:text-4xl text-brand-accent">
-                  <CountUp end={8} />
-                </div>
-                  <p className="mt-3 text-sm uppercase">Years</p>
-              </div>
-          </RevealSection>
-        </div>
+        <About />
+        {/* counter */}
+        <Counter />
+        
       </div>
     </>
   );
