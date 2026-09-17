@@ -52,5 +52,11 @@ body {
   .button {
     @apply inline-flex items-center cursor-pointer gap-2.5 bg-brand-accent text-white rounded-md px-7 py-4 text-[15px] font-bold shadow-brand-bg hover:bg-brand-accent-hover transition-colors;
   }
+  .footer-link{
+    @apply hover:text-brand-accent
+  }
+  .footer-subheading{
+    @apply text-white text-xl pb-3
+  }
 }
 /* inline-flex items-center gap-2.5 text-[15px] font-bold shadow-brand-cta hover:bg-brand-accent-hover transition-colors */
