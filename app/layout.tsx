@@ -4,6 +4,7 @@ import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 import NavContainer from "@/components/Navbar/NavContainer";
 import Footer from "@/components/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <NavContainer />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
