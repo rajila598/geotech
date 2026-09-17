@@ -8,8 +8,9 @@ const Footer = () => {
     <>
       <div className="bg-black text-gray-400 container py-8 lg:py-12">
         {/* upper part */}
-        <div className="grid justify-between gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4">
-          <div className="">
+        <div className="grid justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4">
+          {/* first part with logo */}
+          <div>
             <Logo />
             <p className="py-3 ">
               Providing reliable geotechnical and environmental inspection,
@@ -29,7 +30,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          {/* About */}
+          <div className="flex flex-col gap-2 lg:mx-auto">
             <h1 className="footer-subheading">About</h1>
             <a href="#" className="footer-link">
               About Us
@@ -41,7 +43,8 @@ const Footer = () => {
               Careers
             </a>
           </div>
-          <div className="flex flex-col gap-2">
+          {/* help part */}
+          <div className="flex flex-col gap-2 lg:mx-auto">
             <h1 className="footer-subheading">Need Help?</h1>
             <p className="flex flex-col gap-1">
               Call us{" "}
@@ -56,7 +59,8 @@ const Footer = () => {
               </a>
             </p>
           </div>
-          <div>
+          {/* address */}
+          <div className=" lg:mx-auto">
             <h1 className="footer-subheading">Australia Head Office</h1>
             <p>45/111-222 Victoria Street</p>
             <p>Wetherill Park, NSW 2164</p>
@@ -67,14 +71,14 @@ const Footer = () => {
         </div>
         <hr />
         {/* below part */}
-        <div className="justify-between py-4">
+        <div className="flex justify-between py-4">
           <div>
-            <p className="flex">
+            <p className="flex gap-2">
               <BiCopyright /> 2026 AETG - All Rights reserved.{" "}
               <a href="#" className="underline footer-link">
                 Privacy Policy
               </a>
-              <span> | </span>
+              <span>|</span>
               <a href="#" className="underline footer-link">
                 Terms of Use
               </a>
