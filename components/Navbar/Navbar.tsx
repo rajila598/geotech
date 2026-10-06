@@ -6,13 +6,13 @@ import { TiThMenu } from "react-icons/ti";
 import MobileNav from "./MobileNav";
 
 type Props = {
-    openNavbar: () => void;
-}
+  openNavbar: () => void;
+};
 
-const Navbar = ({openNavbar}:Props) => {
+const Navbar = ({ openNavbar }: Props) => {
   return (
-    <div className="container h-[12vh] relative z-10 lg:mt-8">
-      <div className="flex items-center h-full w-[90%] xl:w-[80%] mx-auto justify-between lg:justify-center">
+    <div className="h-[12vh] relative z-10 lg:mt-8">
+      <div className="flex items-center h-full w-[90%] xl:w-[80%] mx-auto justify-between">
         {/* logo */}
         <Logo />
         {/* Links */}
@@ -28,15 +28,18 @@ const Navbar = ({openNavbar}:Props) => {
               </Link>
             );
           })}
-        <button className="button">Get a Quote</button>
         </div>
-      {/* Menu */}
-      <div onClick={openNavbar} className="lg:hidden">
-        <TiThMenu className="w-6 h-6 cursor-pointer"/>
-        <MobileNav isMenuOpen={false} closeNavbar={function (): void {
-            throw new Error("Function not implemented.");
-          } } />
-      </div>
+          <button className="button hidden lg:block">Get a Quote</button>
+        {/* Menu */}
+        <div onClick={openNavbar} className="lg:hidden">
+          <TiThMenu className="w-6 h-6 cursor-pointer" />
+          <MobileNav
+            isMenuOpen={false}
+            closeNavbar={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        </div>
       </div>
     </div>
   );

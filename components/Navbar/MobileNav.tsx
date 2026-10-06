@@ -25,7 +25,7 @@ const MobileNav = ({isMenuOpen, closeNavbar}: Props) => {
               </Link>
             );
           })}
-        <button className="button">Get a Quote</button>
+        <button className="button w-40 mx-10">Get a Quote</button>
         <IoCloseSharp onClick={closeNavbar} className="absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6" />
       </div>
     </div>

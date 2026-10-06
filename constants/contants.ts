@@ -1,37 +1,33 @@
 export const NAV_LINKS = [
     {
         id: 1,
-        url: '#',
+        url: '/',
         lable: "Home",
     },
     {
         id: 2,
         url: '#',
-        lable: "Geotechnical",
+        lable: "About",
     },
     {
         id: 3,
         url: '#',
-        lable: "Environmental",
+        lable: "Services",
     },
     {
         id: 4,
         url: '#',
-        lable: "Testing",
+        lable: "Projects",
     },
     {
         id: 5,
         url: '#',
-        lable: "Projects",
+        lable: "Blog",
     },
     {
         id: 6,
-        url: '#',
-        lable: "Company",
+        url: '/contact',
+        lable: "Contact",
     },
-    {
-        id: 7,
-        url: '#',
-        lable: "Contact Us",
-    },
+    
 ]

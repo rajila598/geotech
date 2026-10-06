@@ -22,11 +22,11 @@ body {
   --font-mono: var(--font-geist-mono);
   --font-albert: var(--font-albert-sans);
 
-  --color-primary: #2f3a4b;
-  --color-secondary: #ededed;
+  --color-primary: #093254;
+  --color-secondary: #355162;
 
   --color-brand-bg: #fcece3;
-  --color-brand-accent: #f0704e;
+  --color-brand-accent: #026D7F;
   --color-brand-accent-hover: #e35f3c;
   --color-brand-muted: #6b6b6b;
 }
@@ -57,6 +57,9 @@ body {
   }
   .footer-subheading{
     @apply text-white text-xl pb-3
+  }
+  .flex-center{
+    @apply flex items-center justify-center
   }
 }
 /* inline-flex items-center gap-2.5 text-[15px] font-bold shadow-brand-cta hover:bg-brand-accent-hover transition-colors */
