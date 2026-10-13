@@ -19,9 +19,9 @@ const MobileNav = ({isMenuOpen, closeNavbar}: Props) => {
               <Link
                 href={link.url}
                 key={link.id}
-                className="text-primary hover:font-semibold transition-all duration-200"
+                className="font-semibold underline decoration-transparent hover:decoration-white underline-offset-8 decoration-[3px] transition-all duration-300 delay-150 ease-in-out"
               >
-                <p className="text-white w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px]">{link.lable}</p>
+                <p className="text-lg ml-12">{link.lable}</p>
               </Link>
             );
           })}

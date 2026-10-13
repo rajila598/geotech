@@ -19,13 +19,13 @@ const Footer = () => {
             </p>
             <p className="text-white text-xl py-3">Connect With Us</p>
             <div className="flex gap-4 text-xl text-white">
-              <a href="#" className="hover:text-brand-accent">
+              <a href="#" className="hover:text-brand-500">
                 <FaFacebook />
               </a>
-              <a href="#" className="hover:text-brand-accent">
+              <a href="#" className="hover:text-brand-500">
                 <FaInstagram />
               </a>
-              <a href="#" className="hover:text-brand-accent">
+              <a href="#" className="hover:text-brand-500">
                 <FaLinkedin />
               </a>
             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
           <div>
             <p>
               Powered by{" "}
-              <a href="#" className="underline hover:text-brand-accent">
+              <a href="#" className="underline hover:text-brand-500">
                 Geocon Engineering Consultancy
               </a>
             </p>

@@ -14,23 +14,15 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Color Tokens Reference
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This document outlines the design system's color tokens, their corresponding hex codes, and their recommended best use cases.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Token | Hex | Best Use |
+| :--- | :--- | :--- |
+| `brand-500` | `#087F8C` | Primary buttons and brand accents |
+| `brand-600` | `#076773` | Hover states |
+| `navy-600` | `#102A43` | Headings and dark backgrounds |
+| `slate-600` | `#526575` | Body text |
+| `slate-200` | `#D6DFE5` | Borders |
+| `surface-muted` | `#F1F5F7` | Alternating sections |
