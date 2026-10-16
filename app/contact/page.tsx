@@ -5,10 +5,12 @@ const page = () => {
   return (
     <>
       <div className="">
-        <BreadCrumb title="Contact Us" />
-        <div>
-          
-        </div>
+        <BreadCrumb
+          title="Contact Us"
+          subtitle="contact us"
+          breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
+        />
+        <div></div>
       </div>
     </>
   );
