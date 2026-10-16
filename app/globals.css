@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 html,
 body {
   margin: 0;
@@ -26,9 +21,50 @@ body {
   --color-secondary: #355162;
 
   --color-brand-bg: #fcece3;
-  --color-brand-accent: #026D7F;
-  --color-brand-accent-hover: #e35f3c;
   --color-brand-muted: #6b6b6b;
+}
+
+@theme {
+  /* Brand Teal */
+  --color-brand-50: #E6F4F4;
+  --color-brand-100: #C6E7E8;
+  --color-brand-200: #8FD0D3;
+  --color-brand-300: #4BB0B7;
+  --color-brand-400: #168F9A;
+  --color-brand-500: #087F8C;
+  --color-brand-600: #076773;
+  --color-brand-700: #08535E;
+  --color-brand-800: #0B424B;
+  --color-brand-900: #0A343B;
+
+  /* Deep Navy */
+  --color-navy-50: #EAF0F6;
+  --color-navy-100: #D4DFEB;
+  --color-navy-200: #A8BDD2;
+  --color-navy-300: #7896B2;
+  --color-navy-400: #496D8D;
+  --color-navy-500: #284D6D;
+  --color-navy-600: #102A43;
+  --color-navy-700: #0D2338;
+  --color-navy-800: #091B2D;
+  --color-navy-900: #061321;
+
+  /* Slate / Neutral */
+  --color-slate-50: #F6F8F9;
+  --color-slate-100: #E9EEF1;
+  --color-slate-200: #D6DFE5;
+  --color-slate-300: #B7C5CE;
+  --color-slate-400: #91A3B0;
+  --color-slate-500: #718695;
+  --color-slate-600: #526575;
+  --color-slate-700: #3F5261;
+  --color-slate-800: #2C3D4B;
+  --color-slate-900: #1B2A35;
+
+  /* Surfaces */
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F1F5F7;
+  --color-surface-accent: #D5E7E9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,10 +86,14 @@ body {
   }
 
   .button {
-    @apply inline-flex items-center cursor-pointer gap-2.5 bg-brand-accent text-white rounded-md px-7 py-4 text-[15px] font-bold shadow-brand-bg hover:bg-brand-accent-hover transition-colors;
+    @apply inline-flex items-center cursor-pointer gap-2.5 bg-brand-500 text-white rounded-md px-7 py-4 text-[15px] font-bold shadow-brand-bg hover:bg-brand-600 transition-colors;
+  }
+
+  .button-transparent {
+    @apply inline-flex items-center gap-3 rounded-sm border border-white/80 px-7 py-3.5 text-sm font-bold transition hover:bg-white/10;
   }
   .footer-link{
-    @apply hover:text-brand-accent
+    @apply hover:text-brand-500
   }
   .footer-subheading{
     @apply text-white text-xl pb-3

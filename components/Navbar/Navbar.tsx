@@ -11,7 +11,7 @@ type Props = {
 
 const Navbar = ({ openNavbar }: Props) => {
   return (
-    <div className="h-[12vh] relative z-10 lg:mt-8">
+    <div className="h-[12vh] relative z-10">
       <div className="flex items-center h-full w-[90%] xl:w-[80%] mx-auto justify-between">
         {/* logo */}
         <Logo />
@@ -22,7 +22,7 @@ const Navbar = ({ openNavbar }: Props) => {
               <Link
                 href={link.url}
                 key={link.id}
-                className="text-primary hover:font-semibold transition-all duration-200"
+                className="text-navy-600 font-semibold underline decoration-transparent hover:decoration-brand-500 underline-offset-8 decoration-[3px] transition-all duration-300 delay-150 ease-in-out"
               >
                 <p>{link.lable}</p>
               </Link>
