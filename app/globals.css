@@ -61,5 +61,14 @@ body {
   .flex-center{
     @apply flex items-center justify-center
   }
+  .title-text{
+    @apply font-bold text-3xl lg:text-4xl
+  }
+  .subtitle-text{
+    @apply font-bold text-xl lg:text-2xl my-2
+  }
+  .body-text{
+    @apply text-base sm:text-lg leading-relaxed text-brand-muted my-2
+  }
 }
 /* inline-flex items-center gap-2.5 text-[15px] font-bold shadow-brand-cta hover:bg-brand-accent-hover transition-colors */

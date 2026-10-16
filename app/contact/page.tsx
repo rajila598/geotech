@@ -6,6 +6,9 @@ const page = () => {
     <>
       <div className="">
         <BreadCrumb title="Contact Us" />
+        <div>
+          
+        </div>
       </div>
     </>
   );
