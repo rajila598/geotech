@@ -5,6 +5,7 @@ import CarouselCard, {
 } from "@/components/Carousel/CarouselCard";
 import Counter from "@/components/Counter/Counter";
 import HomePage from "@/components/Home/HomePage";
+import Homes from "@/app/home/page";
 
 
 export const carouselSlides: CarouselSlide[] = [
@@ -52,7 +53,8 @@ export const carouselSlides: CarouselSlide[] = [
 const Home = () => {
   return (
     <>
-      <Carousel
+    <Homes />
+     {/* <Carousel
         showDots={false}
         showArrows={false}
         autoPlay
@@ -64,11 +66,11 @@ const Home = () => {
       </Carousel>
       <div className="container">
         {/* why choose us */}
-        <HomePage />
+       {/* <HomePage />
         {/* counter */}
-        <Counter />
+       {/* <Counter />
         
-      </div>
+      </div>*/}
     </>
   );
 };

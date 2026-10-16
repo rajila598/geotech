@@ -7,7 +7,7 @@ const HomePage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center md:px-4 py-16 mx-auto max-w-[1200px] gap-8">
         <div className="flex flex-col gap-8 items-start justify-start">
           <div className="title-text">Core Value Proposition</div>
-          <div className="text-gray-500">
+          <div className="text-gray-500 text-xl text-justify mr-6">
             Ground conditions can create significant cost, safety and programme
             risks. ACE delivers clear advice that connects investigation
             findings with practical design and construction outcomes. Our focus

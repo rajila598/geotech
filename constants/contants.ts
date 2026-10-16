@@ -6,7 +6,7 @@ export const NAV_LINKS = [
     },
     {
         id: 2,
-        url: '#',
+        url: '/about',
         lable: "About",
     },
     {

@@ -23,9 +23,9 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ slide }) => {
 
     {/* Left column */}
     <div className="w-full lg:flex-1 font-albert">
-      <h1 className="text-4xl sm:text-5xl lg:text-7xl leading-[1.08] mb-5 lg:mb-6">
+      <h1 className="text-2xl sm:text-4xl lg:text-5xl leading-[1.08] mb-5 lg:mb-6">
         {slide.title}{" "}
-        <span className="text-brand-500">
+        <span className="text-brand-500 text-bold">
           {slide.highlightText}
         </span>
       </h1>
