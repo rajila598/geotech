@@ -11,17 +11,17 @@ export const NAV_LINKS = [
     },
     {
         id: 3,
-        url: '#',
+        url: '/services',
         lable: "Services",
     },
     {
         id: 4,
-        url: '#',
+        url: '/project',
         lable: "Projects",
     },
     {
         id: 5,
-        url: '#',
+        url: '/blog',
         lable: "Blog",
     },
     {
