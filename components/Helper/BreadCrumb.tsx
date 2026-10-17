@@ -26,7 +26,7 @@ const BreadCrumb = ({
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/10" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-16 lg:px-10">
+        <div className="relative z-10  w-full container-padding">
           <nav
             aria-label="Breadcrumb"
             className="mb-7 flex flex-wrap items-center gap-2 text-sm"
