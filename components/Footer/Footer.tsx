@@ -55,7 +55,7 @@ const Footer = () => {
             <p className="flex flex-col gap-1">
               Write Us{" "}
               <a href="#" className="footer-link">
-                info@rajila.np
+                info@acegeotech.au
               </a>
             </p>
           </div>
