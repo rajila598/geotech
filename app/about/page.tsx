@@ -52,8 +52,8 @@ const page = () => {
                 ACE Geotechnical Services is a specialist consultancy providing
                 geotechnical investigation, assessment and construction phase
                 support across Queensland.
-              </p>
-              <p className="body-text">
+                <br />
+                <br />
                 The business was established to offer clients direct access to
                 experienced engineering advice without unnecessary complexity.
               </p>

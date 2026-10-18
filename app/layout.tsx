@@ -27,7 +27,7 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Landing Page",
+  title: "ACE Geotechnical Services",
   description: "Underdevelopment",
 };
 

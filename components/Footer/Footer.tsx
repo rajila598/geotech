@@ -6,9 +6,9 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="bg-black text-gray-400 container py-8 lg:py-12">
+      <div className="bg-black text-gray-400 py-8 lg:py-12 w-full">
         {/* upper part */}
-        <div className="grid justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4">
+        <div className="grid container-padding gap-10 justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4">
           {/* first part with logo */}
           <div>
             <Logo />
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <hr />
         {/* below part */}
-        <div className="flex justify-between py-4">
+        <div className="flex justify-between py-4 container-padding">
           <div>
             <p className="flex gap-2">
               <BiCopyright /> 2026 AETG - All Rights reserved.{" "}

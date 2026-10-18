@@ -108,7 +108,7 @@ body {
     @apply font-bold text-xl lg:text-2xl my-2
   }
   .body-text{
-    @apply text-base sm:text-lg leading-relaxed text-brand-muted my-2
+    @apply mb-7 leading-7 text-slate-600 text-justify
   }
   .container-padding{
     @apply mx-auto max-w-7xl px-6 lg:px-10
